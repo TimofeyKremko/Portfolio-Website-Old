@@ -264,6 +264,10 @@ section {
   line-height: 2rem;
 }
 
+.skill-img {
+  font-size: 60px;
+}
+
 /* About */
 .about-container {
   display: -ms-grid;
@@ -283,6 +287,16 @@ section {
 }
 
 .about-container .right-about .about-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px solid var(--color-grey-5);
   border-radius: 5px;
   -webkit-transition: all .4s ease-in-out;
@@ -407,7 +421,7 @@ section {
 }
 
 .about-stats {
-  padding-bottom: 4rem;
+  padding-bottom: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,8 +431,21 @@ section {
 }
 
 .about-stats .about-item {
-  min-width: 350px;
-  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-width: 190px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 3rem;
+  max-width: calc(100% / 6 - 1rem);
 }
 
 .about-stats .progress-bars {
@@ -569,6 +596,14 @@ section {
   font-size: 1.5rem;
   color: var(--color-white);
   margin-bottom: 1.5rem;
+}
+
+.portfolios .portfolio-item .hover-items .def-title {
+  font-weight: 400;
+}
+
+.portfolios .portfolio-item .hover-items .tech-stack-list {
+  text-align: center;
 }
 
 .portfolios .portfolio-item .hover-items .icons {
@@ -972,6 +1007,7 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0;
   }
   .contact-content-con .right-contact {
     margin-left: 0;
@@ -989,6 +1025,9 @@ section {
   }
   .contact-content-con .right-contact {
     margin-bottom: 6rem;
+  }
+  .left-contact p {
+    text-align: center;
   }
   .contact-item {
     -webkit-box-orient: vertical;
